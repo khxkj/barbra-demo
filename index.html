@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>باربرا صالون | Barbra Salon — المدينة المنورة</title>
+<meta name="description" content="باربرا صالون — صالون نسائي في المدينة المنورة: حمام مغربي، شعر، أظافر، مكياج وسبا.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blush:#F6D6D6;--rose:#E8A0A8;--deep:#B9576B;--ivory:#FFF8F5;--ink:#2B2B2B}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Tajawal,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.8}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1140px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,248,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--blush)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.35rem;letter-spacing:.5px}.logo span{color:var(--deep)}
+.links{display:flex;gap:22px;font-weight:500}.links a{text-decoration:none}.links a:hover{color:var(--deep)}
+#demoBadge{position:fixed;top:74px;left:14px;z-index:60;background:var(--deep);color:#fff;font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(185,87,107,.35)}
+.btn{display:inline-block;background:var(--deep);color:#fff;border:0;border-radius:999px;padding:13px 30px;font:700 1.05rem Tajawal;cursor:pointer;text-decoration:none;transition:.2s}
+.btn:hover{background:#9e4559;transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--deep);border:2px solid var(--deep)}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:url(img/p01.jpg) center/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,43,43,.05) 20%,rgba(120,40,60,.78))}
+.hero .wrap{position:relative;padding-bottom:70px}
+.rating{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.92);color:var(--ink);border-radius:999px;padding:6px 16px;font-weight:700;margin-bottom:16px}.rating b{color:var(--deep)}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.2;font-weight:800}
+.hero p{font-size:1.15rem;max-width:560px;margin:12px 0 24px;opacity:.95}
+.hero .ghost{color:#fff;border-color:#fff;margin-inline-start:8px}
+section{padding:80px 0}.kick{color:var(--deep);font-weight:700;letter-spacing:1px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:28px;line-height:1.3}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 8px 28px rgba(185,87,107,.1)}
+.card img{height:210px;width:100%;object-fit:cover}.card div{padding:18px}.card h3{font-size:1.15rem;margin-bottom:4px}
+.card p{font-size:.95rem;color:#5a5a5a}
+.price-note{margin-top:22px;background:var(--blush);border-radius:16px;padding:14px 18px}
+.hammam{background:linear-gradient(135deg,var(--blush),var(--ivory))}
+.split{display:grid;gap:30px;grid-template-columns:1.1fr 1fr;align-items:center}
+.split .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}.split .pics img{border-radius:20px;height:260px;width:100%;object-fit:cover}
+.split .pics img:first-child{grid-row:span 2;height:532px}
+ul.ticks{list-style:none;margin:16px 0 26px}ul.ticks li{padding:6px 0}ul.ticks li::before{content:"✿ ";color:var(--deep)}
+.gallery{columns:3 260px;gap:12px}.gallery img{margin-bottom:12px;border-radius:16px;cursor:zoom-in;transition:.25s}.gallery img:hover{opacity:.88}
+#lb{position:fixed;inset:0;background:rgba(43,43,43,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+#lb.on{display:flex}#lb img{max-height:88vh;border-radius:12px}#lb button{position:absolute;top:18px;right:22px;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer}
+.team{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.member{background:#fff;border-radius:20px;padding:22px 26px;text-align:center;min-width:150px;box-shadow:0 6px 20px rgba(185,87,107,.08)}
+.member .av{width:64px;height:64px;border-radius:50%;margin:0 auto 10px;background:linear-gradient(135deg,var(--rose),var(--deep));color:#fff;display:grid;place-items:center;font-size:1.6rem;font-weight:800}
+.member small{color:var(--deep);font-weight:600}
+.reviews{background:var(--deep);color:#fff;text-align:center}.reviews .big{font-size:4rem;font-weight:800;line-height:1}
+.themes{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}.themes span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 18px}
+.cta{text-align:center;background:url(img/p04.jpg) center/cover;position:relative;color:#fff}.cta::before{content:"";position:absolute;inset:0;background:rgba(43,43,43,.55)}.cta .wrap{position:relative}
+.contact{display:grid;gap:24px;grid-template-columns:1fr 1fr}.info div{margin-bottom:16px}.info b{color:var(--deep);display:block}
+iframe{width:100%;height:340px;border:0;border-radius:20px}
+.ltr{direction:ltr;unicode-bidi:embed;display:inline-block}
+.women{background:var(--blush);border-radius:14px;padding:10px 16px;display:inline-block;font-weight:700}
+footer{background:var(--ink);color:#ddd;text-align:center;padding:26px;font-size:.9rem}
+@media(max-width:800px){.links{display:none}.split,.contact{grid-template-columns:1fr}.split .pics img:first-child{height:260px;grid-row:auto}section{padding:56px 0}.hero{min-height:82vh}}
+</style>
+</head>
+<body>
+<div id="demoBadge">نسخة تجريبية / Demo</div>
+<header><nav class="wrap"><div class="logo">باربرا <span>صالون</span></div>
+<div class="links"><a href="#services">الخدمات</a><a href="#hammam">الحمام والسبا</a><a href="#gallery">المعرض</a><a href="#team">الفريق</a><a href="#reviews">التقييمات</a><a href="#contact">تواصلي معنا</a></div></nav></header>
+
+<section class="hero" id="home"><div class="wrap">
+<div class="rating">★ <b>4.5</b> من 247 تقييم على Google</div>
+<h1>باربرا صالون<br>جمالك يبدأ هنا</h1>
+<p>صالون نسائي في المدينة المنورة — حمام مغربي، تصفيف شعر، أظافر، مكياج وسبا، بلمسة راقية وترحيب دافئ.</p>
+<button class="btn" id="bookBtn" onclick="openChat()">احجزي موعدك</button><a class="btn ghost" href="#services">خدماتنا</a>
+</div></section>
+
+<section id="services"><div class="wrap"><p class="kick">خدماتنا</p><h2>كل ما تحتاجينه في مكان واحد</h2>
+<div class="grid">
+<div class="card"><img src="img/p03.jpg" alt="حمام مغربي" loading="lazy"><div><h3>الحمام المغربي</h3><p>تجربتنا المميزة للاسترخاء والتنظيف العميق.</p></div></div>
+<div class="card"><img src="img/p06.jpg" alt="تصفيف الشعر" loading="lazy"><div><h3>الشعر</h3><p>تصفيف، استشوار وقص شعر.</p></div></div>
+<div class="card"><img src="img/p13.jpg" alt="مناكير" loading="lazy"><div><h3>المناكير ورسم الأظافر</h3><p>مناكير ونيل آرت بتصاميم أنيقة.</p></div></div>
+<div class="card"><img src="img/p09.jpg" alt="باديكير" loading="lazy"><div><h3>الباديكير</h3><p>عناية متكاملة بالقدمين.</p></div></div>
+<div class="card"><img src="img/p22.jpg" alt="ركن التجميل" loading="lazy"><div><h3>المكياج والحواجب</h3><p>مكياج لكل مناسبة وتنظيف الحواجب بالخيط.</p></div></div>
+<div class="card"><img src="img/p15.jpg" alt="سبا" loading="lazy"><div><h3>السبا والبشرة</h3><p>سبا وتنظيف بشرة بالبخار.</p></div></div>
+</div>
+<p class="price-note">للاستفسار عن الأسعار تواصلي معنا على <a class="ltr" href="tel:+966561009216">056 100 9216</a></p>
+</div></section>
+
+<section class="hammam" id="hammam"><div class="wrap split">
+<div><p class="kick">الحمام المغربي والسبا</p><h2>لحظة استرخاء تستحقينها</h2>
+<p>الحمام المغربي من أكثر ما تمدحه عميلاتنا — في أجواء هادئة ونظيفة، مع غرف سبا ومساج مخصصة.</p>
+<ul class="ticks"><li>حمام مغربي</li><li>سبا وتنظيف بشرة بالبخار</li><li>غرف هادئة ونظيفة</li></ul>
+<button class="btn" onclick="openChat()">احجزي جلستك</button></div>
+<div class="pics"><img src="img/p05.jpg" alt="حمام مغربي" loading="lazy"><img src="img/p17.jpg" alt="غرفة سبا" loading="lazy"><img src="img/p25.jpg" alt="باديكير" loading="lazy"></div>
+</div></section>
+
+<section id="gallery"><div class="wrap"><p class="kick">المعرض</p><h2>من داخل باربرا</h2>
+<div class="gallery">
+<img src="img/p04.jpg" alt="الاستقبال" loading="lazy"><img src="img/p07.jpg" alt="رسم أظافر" loading="lazy"><img src="img/p10.jpg" alt="المدخل" loading="lazy">
+<img src="img/p30.jpg" alt="مناكير" loading="lazy"><img src="img/p26.jpg" alt="المدخل" loading="lazy"><img src="img/p06.jpg" alt="محطات الشعر" loading="lazy">
+<img src="img/p03.jpg" alt="الحمام المغربي" loading="lazy"><img src="img/p15.jpg" alt="غرفة السبا" loading="lazy"><img src="img/p25.jpg" alt="باديكير" loading="lazy">
+</div></div></section>
+
+<section id="team"><div class="wrap" style="text-align:center"><p class="kick">فريقنا</p><h2>أيادٍ ماهرة بانتظارك</h2>
+<div class="team">
+<div class="member"><div class="av">هـ</div><h3>هاجر</h3><small>الشعر</small></div>
+<div class="member"><div class="av">ع</div><h3>عائشة</h3></div>
+<div class="member"><div class="av">ف</div><h3>فاطمة</h3></div>
+<div class="member"><div class="av">ح</div><h3>حفصة</h3></div>
+<div class="member"><div class="av">ف</div><h3>فيروز</h3><small>المكياج</small></div>
+</div></div></section>
+
+<section class="reviews" id="reviews"><div class="wrap"><div class="big">4.5 ★</div><p>من 247 تقييم على Google</p>
+<h2 style="margin-top:18px">ماذا تقول عميلاتنا</h2>
+<div class="themes"><span>تعامل راقٍ ولطيف</span><span>نظافة المكان</span><span>ترحيب صاحبة الصالون</span><span>الحمام المغربي</span></div>
+</div></section>
+
+<section class="cta" id="book"><div class="wrap"><h2>جاهزة لإطلالتك الجديدة؟</h2><p style="margin-bottom:22px">احجزي موعدك الآن عبر مساعدتنا الذكية — بخطوات بسيطة.</p>
+<button class="btn" onclick="openChat()">احجزي موعدك</button></div></section>
+
+<section id="contact"><div class="wrap"><p class="kick">تواصلي معنا</p><h2>نسعد بزيارتك</h2>
+<div class="contact"><div class="info">
+<div><b>العنوان</b>3774 شارع أم أسيد الأنصارية، المدينة المنورة 42331</div>
+<div><b>ساعات العمل</b>السبت–الأربعاء: ١١ صباحاً – ١١ مساءً<br>الخميس–الجمعة: ٣ عصراً – ١١ مساءً</div>
+<div><b>الهاتف</b><a class="ltr" href="tel:+966561009216">056 100 9216</a></div>
+<div><b>إنستغرام</b><a class="ltr" href="https://instagram.com/barbra.salonksa" target="_blank" rel="noopener">@barbra.salonksa</a></div>
+<p class="women">✿ الصالون مخصص للسيدات فقط</p>
+</div>
+<iframe title="الخريطة" loading="lazy" src="https://maps.google.com/maps?q=24.4965,39.5933&z=16&output=embed"></iframe>
+</div></div></section>
+
+<footer>© باربرا صالون — المدينة المنورة · نسخة تجريبية / Demo</footer>
+<div id="lb"><button aria-label="إغلاق" onclick="lb.classList.remove('on')">×</button><img alt=""></div>
+<script>
+const lb=document.getElementById('lb');
+document.querySelectorAll('.gallery img').forEach(i=>i.onclick=()=>{lb.querySelector('img').src=i.src;lb.classList.add('on')});
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+function openChat(){if(window.voiceflow&&window.voiceflow.chat){window.voiceflow.chat.open()}else{window.__openWhenReady=true}}
+</script>
+<script type="text/javascript">
+(function(d,t){var v=d.createElement(t),s=d.getElementsByTagName(t)[0];v.onload=function(){window.voiceflow.chat.load({verify:{projectID:'6adf734c6743f682757d3542'},url:'https://general-runtime.voiceflow.com',voice:{url:'https://runtime-api.voiceflow.com'},environmentID:'main',versionVariant:'published'}).then(function(){if(window.__openWhenReady)window.voiceflow.chat.open()})};v.src="https://cdn.voiceflow.com/widget-next/bundle.mjs";v.type="text/javascript";s.parentNode.insertBefore(v,s)})(document,'script');
+</script>
+</body></html>
